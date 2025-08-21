@@ -1,13 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .sec1{
-            border: 2px solid;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
+     /* border: 2px solid; */
+     display: flex;
+     justify-content: center;
+    align-items: center;
+     flex-direction: column;
+    margin: 2.5% auto;
+}
+.container{
+    /* border: 2px solid; */
+    background-image: url(./weather.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 600px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.382);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+
+}
 .details{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    flex-direction: column;
+    /* border: 2px solid; */
+    margin: 0px 0 5px;
+    padding: 20px;
+}
+.details p{
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    font-family:cursive;
+    text-decoration: underline;
+}
+.details input{
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    padding: 0 10px 0 20px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.382);
+}
+.details input:focus{
+    outline: none;
+    font-style: normal;
+    text-align: start;
+    
+}
+.details input:focus::placeholder{
+    color: transparent;
+}
+#hero{
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: "Edu NSW ACT Cursive", cursive;
+}
+#btn{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 18px;
+    font-family:cursive;
+    transition: all 0.5s ease;
+}
+#btn:hover{
+    box-shadow: 3px 2px 10px 4px rgba(0, 255, 255, 0.345);
+    background-color: whitesmoke;
+    transform: scale(1.1);
+    border: none;
+}
+
+#list{
+    margin-top: 10px;
+    /* border: 2px solid; */
+    border-radius: 30px;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+    /* background-color: rgba(240, 248, 255, 0.444); */
+}
+#list h2{
+    /* border: 2px solid; */
+    margin: 20px 0;
+    font-family: 'Inter',sans-serif;
+    text-decoration: underline;
+}
+#list h3{
+    /* border: 2px solid; */
+    border-radius: 10px;
+    padding: 5px 0 5px 15px;
+    text-align: start;
+    width: 250px;
+    margin: 10px auto;
+    background-color: rgba(128, 128, 128, 0.334);
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.345);
+    font-style: italic;
+    transition: all 0.5s ease;
+}
+#list h3:hover{
+    transform: scale(1.1);
+}
