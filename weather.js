@@ -1,7 +1,7 @@
 let inp=document.getElementById("inp1")
 let btn=document.getElementById("btn")
 btn.addEventListener("click",()=>{
-    let API_KEY=  "YOUR_API_KEY" // paste your api key here
+    let API_KEY= "" // "YOUR_API_KEY" // paste your api key here
     // let limit=5
     let div=document.querySelector("#list")
     console.log(inp.value)
@@ -16,6 +16,7 @@ btn.addEventListener("click",()=>{
         <h3>Wind Speed : ${data.wind.speed}</h3>
         <h3>Lattitude : ${data.coord.lat}</h3>
         <h3>Longitude : ${data.coord.lon}</h3>`
+        div.style.transition="all 1s ease-in";
     })
     .catch(()=>{
         div.innerHTML=`<h3>City Not Found</h3>`
